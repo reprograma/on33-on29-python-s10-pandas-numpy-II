@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online On33 | Semana 12 | 202X | Professora Manuelly Suzik
+Turma Online On33 | Semana 12 | 2024 | Professora Manuelly Suzik
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
