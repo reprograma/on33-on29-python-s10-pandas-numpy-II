@@ -18,32 +18,30 @@ O que veremos na aula de hoje?
   * [Limpeza de dados nulos e duplicados]()
       * isnull() - Indentifica valores nulos em um dataframe
       * dropna() - deletando valores nulos de um dataframe
-      * is_duplicated() - retorna uma coluna indicando qual linha é duplicada
-      * drop_duplicated() - retorna um dataframe com as linhas duplicadas
+      * fillna() - Preenchendo os valores nulos
+      * duplicated() - retorna uma coluna indicando qual linha é duplicada
+      * drop_duplicates() - retorna um dataframe com as linhas duplicadas
   * [Funções de summary]()
     * describe() - retorna um resumo dos dados de um dataframe/coluna
     * value_counts() - retorna a soma dos valores de uma coluna
     * info() - retorna nome da coluna, valores não nulos em cada uma e o tipo
   * [Funções avançadas para dataframes]()
     * apply()
-    * groupby()
 * [Trabalhando com Series](#tema2)
-  * [Introdução ao Numpy](): Os dataframes são compostos por colunas e linhas, essas linhas nós podemos considerar Series de 1 dimenção.
   * [Funções para Series]()
     * where()
     * sort()
+    * min()
+    * max()
 * [Gráficos]()
-  * [Como os gráficos funcionam]()
-  * 
   * [Plotando gráficos com pandas e matplotlib]()
-
-### Material da aula 
+    * plot()
+    * show()
+    * ylabel() e xlabel()
 
 ### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
+- [Matplotlib](https://matplotlib.org)
+- [Numpy](https://numpy.org)
 
 
 <p align="center">

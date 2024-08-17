@@ -2,7 +2,12 @@
 
 ## Nome do Exercicio
 
-- Analise os dados do csv dos empregados de uma empresa e use os métodos do pandas para tirar informações importantes.
+- Use o arquivo desenvolvimento_paises.csv para extrair os seguintes dados:
+  - Limpe o dataframe procurando por valores nulos ou duplicados
+  - Encontre o pais que tenha o maior e o menor valor para a coluna `SafetySecurity` e imprima a diferença entre eles.
+  - Use o apply() para criar uma coluna nova onde a média de todas as colunas - menos a `Country` - quando: Maior que 80 o valor seja "Desenvolvido", entre 50 e 70 seja "Em desenvolvimento" e menor que 60 seja "Subdesenvolvido"
+  - Crie um gráfico a partir da nova coluna criada que demonstre a quantidade de paises que estão em cada uma dessas categorias
+  - Filtre os dados onde o `PersonelFreedom` seja inferior a 30. Se existir 
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
