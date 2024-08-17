@@ -28,10 +28,13 @@ O que veremos na aula de hoje?
     * apply()
     * groupby()
 * [Trabalhando com Series](#tema2)
-  * [Introdução ao Numpy]()
+  * [Introdução ao Numpy](): Os dataframes são compostos por colunas e linhas, essas linhas nós podemos considerar Series de 1 dimenção.
   * [Funções para Series]()
+    * where()
+    * sort()
 * [Gráficos]()
   * [Como os gráficos funcionam]()
+  * 
   * [Plotando gráficos com pandas e matplotlib]()
 
 ### Material da aula 
