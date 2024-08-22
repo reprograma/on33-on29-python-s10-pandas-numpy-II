@@ -19,7 +19,7 @@ Ano_Atual = dt.datetime.now().year
 print(Ano_Atual)
 
 #Cálculo quantidade de anos na empresa
-df["Tempo de Empresa"] = (df["JoiningYear"] - Ano_Atual)
+df["Tempo de Empresa"] = (Ano_Atual - df["JoiningYear"])
 print(df.info())
 
 #Filtro com os funcionários com mais de 5 anos
@@ -28,6 +28,7 @@ print(filtered_df.head())
 
 #Salvando um novo DataFrame com os funcionários com mais de 5 anos
 filtered_df.to_csv("./Funcionarios.csv", index=False)
+
 #Veja qual a cidade que mais tem empregados e faça uma média do tempo de serviço dos empregados por cidade
 Cidades = df["City"].value_counts().idxmax()
 print(Cidades)
@@ -46,7 +47,6 @@ print(format(round(Percentual,2)))
 Qtdade_Funcionários = df['PaymentTier'].count()
 print(Qtdade_Funcionários)
 
-
 #Substitua os valores da coluna `EverBenched` para `True` ou `False`
 df['EverBenched'] = df['EverBenched'].apply(lambda x: "False" if x == 'No' else "True")
 print(df["EverBenched"])
@@ -55,9 +55,9 @@ print(df["EverBenched"])
 Grafico1 = df["EverBenched"].value_counts()
 print(Grafico1)
 Grafico1.plot(kind="pie")
-plt.show
+plt.show()
 
 Grafico2 = df["LeaveOrNot"].value_counts()
 print(Grafico2)
 Grafico2.plot(kind="pie")
-plt.show
+plt.show()
