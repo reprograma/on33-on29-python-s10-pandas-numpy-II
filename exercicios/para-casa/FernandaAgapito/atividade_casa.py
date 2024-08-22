@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 df = pd.read_csv('./employee.csv')
-# print(df.info())
+#print(df.info())
 # print(df.describe())
 # print(df.head())
 # print(df.columns)
@@ -21,10 +21,11 @@ df = pd.read_csv('./employee.csv')
 
 
 #- Crie um dataframe que tenha os empregados que trabalham na empresa a mais de 5 anos.
-
-# mais_cinco_anos = df[df['ExperienceInCurrentDomain'] > 5]
-# print(mais_cinco_anos)
-
+ano_atual = datetime.now().year
+df['tempo_servico'] = df['JoiningYear'].apply(lambda x: ano_atual - x)
+df = (df[df['tempo_servico'] > 5])
+print(df['tempo_servico'].value_counts())
+print(df['tempo_servico'])
 
 # -Agrupe os empregados por gênero e idade e crie um gráfico para cada caso.
 #feminino_por_idade = df[df['Gender'] == 'Female']['Age'].value_counts().sort_index()
@@ -62,10 +63,9 @@ df = pd.read_csv('./employee.csv')
 # cidades = df['City'].value_counts().idxmax()
 # print(' A cidade com mais empregados é: ', cidades)
 
-# ano_atual = datetime.now().year
-# media_cidade = df.groupby('City')['JoiningYear'].mean().apply(lambda x: ano_atual - x)
 
-# print('a media do tempo de serviço em anos é: ', media_cidade)
+media_cidade = df.groupby('City')['JoiningYear'].mean().apply(lambda x: ano_atual - x)
+print('a media do tempo de serviço em anos é: ', media_cidade)
 
 
 
