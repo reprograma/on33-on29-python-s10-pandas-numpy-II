@@ -29,12 +29,30 @@ print(filtered_df.head())
 #Salvando um novo DataFrame com os funcionários com mais de 5 anos
 filtered_df.to_csv("./Funcionarios.csv", index=False)
 
-#Veja qual a cidade que mais tem empregados e faça uma média do tempo de serviço dos empregados por cidade
+#Agrupe os empregados por gênero e idade
+Genero = df["Gender"].value_counts
+print(Genero)
+Idade = df["Age"].value_counts
+print(Idade)
+
+#crie um gráfico para cada caso acima
+Genero.plot(kind="bar", title="Funcionários por Gênero")
+plt.show()
+
+Idade.plot(kind="bar", title="Funcionários por Idade")
+plt.show()
+
+#Veja qual a cidade que mais tem empregados
 Cidades = df["City"].value_counts().idxmax()
 print(Cidades)
 Mais_funcionarios = df["City"].value_counts().max()
 print(Mais_funcionarios)
 print('A cidade com Mais funcionários é', Cidades, 'com', Mais_funcionarios, 'funcionários')
+
+#faça uma média do tempo de serviço dos empregados por cidade
+df["Tempo_servico"] = (Ano_Atual - df["JoiningYear"])
+media_cidade = df.groupby("City")["Tempo_servico"].mean()
+print(media_cidade)
 
 #Faça a porcentagem de quantos empregados ainda trabalham na empresa (use a coluna `LeaveOrNot` do dataframe)
 Funcionarios = df["LeaveOrNot"].count()
