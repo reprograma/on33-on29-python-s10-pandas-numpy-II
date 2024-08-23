@@ -1,0 +1,18 @@
+Education,JoiningYear,City,PaymentTier,Age,Gender,EverBenched,ExperienceInCurrentDomain,LeaveOrNot
+Bachelors,2016,Bangalore,3,39,Male,No,7,0
+Bachelors,2016,Pune,3,38,Female,No,7,0
+Bachelors,2016,Bangalore,3,33,Male,No,6,0
+Bachelors,2014,Pune,3,33,Male,No,6,0
+Bachelors,2017,Bangalore,3,33,Female,No,6,0
+Masters,2014,Bangalore,3,40,Female,No,7,1
+Bachelors,2017,New Delhi,2,33,Male,No,6,0
+Bachelors,2014,Bangalore,3,39,Male,No,7,1
+Masters,2018,Bangalore,3,39,Female,No,6,1
+Bachelors,2012,Bangalore,3,38,Male,No,7,1
+Bachelors,2018,Bangalore,3,38,Male,No,6,1
+Bachelors,2013,Bangalore,3,34,Male,No,6,0
+Bachelors,2012,Bangalore,1,35,Male,No,7,0
+Bachelors,2015,Pune,3,34,Male,Yes,7,0
+Bachelors,2013,Bangalore,1,38,Male,No,6,0
+Bachelors,2016,Bangalore,3,38,Female,No,7,0
+Bachelors,2015,Pune,2,41,Female,No,7,0
