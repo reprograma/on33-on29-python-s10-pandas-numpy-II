@@ -65,7 +65,7 @@ Exercicio para casa semana 12. Analise o dataset Employee.
         # Salvar o grafico 
         plt.savefig('grafico_barras1.png')  ##para salvar automaticamente o grafico
 
-![Grafico1]()
+![Grafico1](https://github.com/CarolyneS14/on33-python-s12-pandas-numpy-II/blob/main/Carolyne-Santos/para-casa/grafico_barras1.png)
 
         # Agrupar por Gênero e Idade
         Age_Male = df[df['Gender'] == 'Male']['Age'].value_counts().sort_index()
@@ -79,7 +79,7 @@ Exercicio para casa semana 12. Analise o dataset Employee.
         # Salvar o grafico 
         plt.savefig('grafico_barras2.png')  ##para salvar automaticamente o grafico
 
-![Grafico2]()
+![Grafico2](https://github.com/CarolyneS14/on33-python-s12-pandas-numpy-II/blob/main/Carolyne-Santos/para-casa/grafico_barras2.png)
 
 ## 🟦 Atividade 5 - Veja qual a cidade que mais tem empregados e faça uma média do tempo de serviço dos empregados por cidade:
 
@@ -166,7 +166,7 @@ Exercicio para casa semana 12. Analise o dataset Employee.
         # Salvar o grafico 
         plt.savefig('grafico_pizza.png')  ##para salvar automaticamente o grafico
 
-![GraficosPizza]()
+![GraficosPizza](https://github.com/CarolyneS14/on33-python-s12-pandas-numpy-II/blob/main/Carolyne-Santos/para-casa/grafico_pizza.png)
   
 ## 👩🏻‍🏫 Professora Manuelly Suzik.
 
